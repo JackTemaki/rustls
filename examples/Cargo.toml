@@ -18,11 +18,11 @@ log = { version = "0.4.4" }
 mio = { version = "0.8", features = ["net", "os-poll"] }
 rustls = { path = "../rustls", features = [ "logging" ]}
 rustls-pemfile = "1.0.0"
-sct = "0.7"
+sct = { git = "https://github.com/jacktemaki/sct.rs", branch = "0.7.0-riscv" }
 serde = "1.0"
 serde_derive = "1.0"
-webpki-roots = "0.23"
+webpki-roots = { git = "https://github.com/jacktemaki/webpki-roots", branch = "0.22.0-riscv" }
 
 [dev-dependencies]
 regex = "1.0"
-ring = "0.16.20"
+ring = { git = "https://github.com/jacktemaki/ring", branch = "ring-0.17-riscv" }
