@@ -19,7 +19,7 @@ rustversion = { version = "1.0.6", optional = true }
 log = { version = "0.4.4", optional = true }
 ring = { git = "https://github.com/jacktemaki/ring", branch = "ring-0.17-riscv" }
 sct = { git = "https://github.com/jacktemaki/sct.rs", branch = "0.7.0-riscv" }
-webpki = { git = "https://github.com/jacktemaki/webpki", branch = "0.21.4-riscv", , features = ["alloc", "std"]}
+rustls-webpki = { git = "https://github.com/JackTemaki/webpki", branch = "untrusted-0.9-riscv" , features = ["alloc", "std"] }
 
 [features]
 default = ["logging", "tls12"]
